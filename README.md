@@ -12,7 +12,7 @@ Tetraketide cyclization is a branch point in chalcone biosynthesis. Intramolecul
 | Classical MD and clustering | AMBER22 simulations of solvated TaCHS, followed by CPPTRAJ processing and TTClust clustering. Representative snapshots seeded the QM/MM calculations. | [Classical MD topology](classical_md/) and the selected QM/MM starting snapshots. The classical production trajectories and full preparation and clustering inputs are outside the tracked repository. |
 | Cyclization in TaCHS | DFTB3/AMBER ff14SB umbrella sampling of both pathways for representative CYL and LIG conformations. | [Enzyme QM/MM inputs](enzyme_qm_mm_md/) for two CYL and four LIG clusters. |
 | Cyclization in water | QM/MM-MD umbrella sampling of two comparable CYL conformations in explicit water. The extracted intermediate was capped with acetyl (ACE) and N-methylamide (NME) groups. | [Solution QM/MM inputs](solution_qm_mm_md/). |
-| Gas-phase cyclization | Gaussian 16 relaxed potential-energy scans of capped CYL along the forming C1–C6 bond for Claisen condensation and the forming O5–C1 bond for lactonization. Chapter 3 reports B3LYP/6-31G(d) calculations. | [Archived Gaussian inputs and logs](gas_phase_dft/), with the limitations below. |
+| Gas-phase cyclization | Gaussian 16 relaxed potential-energy scans of capped CYL along the forming C1–C6 bond for Claisen condensation and the forming O5–C1 bond for lactonization at B3LYP/6-31G(d) level. | [Archived Gaussian inputs and logs](gas_phase_dft/), with the limitations below. |
 
 ## Run the QM/MM umbrella sampling
 
