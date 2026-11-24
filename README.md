@@ -2,7 +2,7 @@
 
 Tetraketide cyclization is a branch point in chalcone biosynthesis. Intramolecular **Claisen condensation** produces naringenin chalcone, the desired product. Competing **lactonization** produces p-coumaroyltriacetic acid lactone (CTAL). This study asks cyclization occur when the tetraketide intermediate bound to the CoA (LIG) or bound to the catalytical amino acid Cys167. 
 
- Classical MD and conformational clustering provided representative structures for QM/MM molecular dynamics (QM/MM-MD) umbrella sampling of both reaction pathways. The study then examined capped CYL in explicit water without the enzyme to isolate the contribution of the active site. Finally, gas-phase DFT scans of capped CYL probed the intrinsic energetics of the two cyclizations in the absence of both protein and solvent.
+ Classical MD and conformational clustering provided representative structures for QM/MM molecular dynamics (QM/MM-MD) umbrella sampling of both reaction pathways. The study then examined capped CYL in explicit water without the enzyme to isolate the contribution of the active site. Finally, gas-phase DFT scans of capped CYL probed the intrinsic energetics of the two cyclizations in the absence of both protein and solvent. In this study we work on the homology model of the chalcone synthase from Triticum aestivmum (TaCHS)
 
 
 ## Study workflow
