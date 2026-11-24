@@ -1,14 +1,9 @@
 # How chalcone synthase controls cyclization
 
-Computational workflows accompanying Chapter 3 of Mohammad Yousefi’s dissertation on chalcone synthase from wheat (*Triticum aestivum*, TaCHS).
+Tetraketide cyclization is a branch point in chalcone biosynthesis. Intramolecular **Claisen condensation** produces naringenin chalcone, the desired product. Competing **lactonization** produces p-coumaroyltriacetic acid lactone (CTAL). This study asks cyclization occur when the tetraketide intermediate bound to the CoA (LIG) or bound to the catalytical amino acid Cys167. 
 
-## Motivation
+ Classical MD and conformational clustering provided representative structures for QM/MM molecular dynamics (QM/MM-MD) umbrella sampling of both reaction pathways. The study then examined capped CYL in explicit water without the enzyme to isolate the contribution of the active site. Finally, gas-phase DFT scans of capped CYL probed the intrinsic energetics of the two cyclizations in the absence of both protein and solvent.
 
-Tetraketide cyclization is a branch point in chalcone biosynthesis. Intramolecular **Claisen condensation** produces naringenin chalcone, the desired product. Competing **lactonization** produces p-coumaroyltriacetic acid lactone (CTAL). This study asks which form of the tetraketide cyclizes and how the TaCHS active site favors chalcone formation.
-
-The study compares two enzyme-bound states. In **LIG**, the tetraketide is attached to coenzyme A (CoA). In **CYL**, it is attached to catalytic **Cys167** through a thioester. Classical MD and conformational clustering provided representative structures for QM/MM molecular dynamics (QM/MM-MD) umbrella sampling of both reaction pathways. The study then examined capped CYL in explicit water without the enzyme to isolate the contribution of the active site. Finally, gas-phase DFT scans of capped CYL probed the intrinsic energetics of the two cyclizations in the absence of both protein and solvent.
-
-Chapter 3 reports lower cyclization barriers for CYL than for LIG and identifies a CYL near-attack conformation that favors Claisen condensation in TaCHS. Lactonization has the lower barrier for both capped CYL conformations in water and in the gas phase. Together, these results support a model in which TaCHS promotes naringenin chalcone formation by preorganizing CYL for carbon–carbon bond formation.
 
 ## Study workflow
 
