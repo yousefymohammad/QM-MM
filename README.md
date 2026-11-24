@@ -1,4 +1,4 @@
-# How chalcone synthase controls tetraketide cyclization
+# How chalcone synthase controls cyclization
 
 Computational workflows accompanying Chapter 3 of Mohammad Yousefi’s dissertation on chalcone synthase from wheat (*Triticum aestivum*, TaCHS).
 
