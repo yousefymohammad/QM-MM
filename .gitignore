@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.chk
+*.fchk
+*.nc
+umbrella_windows/
+
+/enzyme_qm_mm_md/LIG/cluster_1/dftb3/
+/enzyme_qm_mm_md/LIG/cluster_1/frame_33.pdb
+/enzyme_qm_mm_md/LIG/cluster_1/frame_33.rst7
+/enzyme_qm_mm_md/LIG/cluster_1/sys_solv_cym.top
+
+# Thesis PMF tables are kept locally.
+reference_pmf.csv
