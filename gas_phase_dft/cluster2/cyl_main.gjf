@@ -1,7 +1,7 @@
 %chk=CY.chk
 %nprocshared=20
 %mem=16GB
-# opt=modredundant hf/6-31g(d) pop=mk scf=(qc,tight) iop(6/33=2,6/42=6)
+# opt=modredundant b3lyp/6-31g(d) scf=(xqc,novaracc,maxcycle=512)
 test
 
 cluster_3

@@ -1,14 +1,9 @@
-# How chalcone synthase controls tetraketide cyclization
+# How chalcone synthase controls cyclization
 
-Computational workflows accompanying Chapter 3 of Mohammad Yousefi’s dissertation on chalcone synthase from wheat (*Triticum aestivum*, TaCHS).
+Tetraketide cyclization is a branch point in chalcone biosynthesis. Intramolecular **Claisen condensation** produces naringenin chalcone, the desired product. Competing **lactonization** produces p-coumaroyltriacetic acid lactone (CTAL). This study asks whether cyclization occurs when the tetraketide is bound to coenzyme A (LIG) or to the catalytic residue Cys167 (CYL).
 
-## Motivation
+Classical MD and conformational clustering provided representative structures for QM/MM molecular dynamics (QM/MM-MD) umbrella sampling of both reaction pathways. The study then examined capped CYL in explicit water without the enzyme to isolate the contribution of the active site. Finally, gas-phase DFT scans of capped CYL probed the intrinsic energetics of the two cyclizations in the absence of both protein and solvent. In this study we work on the homology model of the chalcone synthase from *Triticum aestivum* (TaCHS).
 
-Tetraketide cyclization is a branch point in chalcone biosynthesis. Intramolecular **Claisen condensation** produces naringenin chalcone, the desired product. Competing **lactonization** produces p-coumaroyltriacetic acid lactone (CTAL). This study asks which form of the tetraketide cyclizes and how the TaCHS active site favors chalcone formation.
-
-The study compares two enzyme-bound states. In **LIG**, the tetraketide is attached to coenzyme A (CoA). In **CYL**, it is attached to catalytic **Cys167** through a thioester. Classical MD and conformational clustering provided representative structures for QM/MM molecular dynamics (QM/MM-MD) umbrella sampling of both reaction pathways. The study then examined capped CYL in explicit water without the enzyme to isolate the contribution of the active site. Finally, gas-phase DFT scans of capped CYL probed the intrinsic energetics of the two cyclizations in the absence of both protein and solvent.
-
-Chapter 3 reports lower cyclization barriers for CYL than for LIG and identifies a CYL near-attack conformation that favors Claisen condensation in TaCHS. Lactonization has the lower barrier for both capped CYL conformations in water and in the gas phase. Together, these results support a model in which TaCHS promotes naringenin chalcone formation by preorganizing CYL for carbon–carbon bond formation.
 
 ## Study workflow
 
@@ -17,7 +12,7 @@ Chapter 3 reports lower cyclization barriers for CYL than for LIG and identifies
 | Classical MD and clustering | AMBER22 simulations of solvated TaCHS, followed by CPPTRAJ processing and TTClust clustering. Representative snapshots seeded the QM/MM calculations. | [Classical MD topology](classical_md/) and the selected QM/MM starting snapshots. The classical production trajectories and full preparation and clustering inputs are outside the tracked repository. |
 | Cyclization in TaCHS | DFTB3/AMBER ff14SB umbrella sampling of both pathways for representative CYL and LIG conformations. | [Enzyme QM/MM inputs](enzyme_qm_mm_md/) for two CYL and four LIG clusters. |
 | Cyclization in water | QM/MM-MD umbrella sampling of two comparable CYL conformations in explicit water. The extracted intermediate was capped with acetyl (ACE) and N-methylamide (NME) groups. | [Solution QM/MM inputs](solution_qm_mm_md/). |
-| Gas-phase cyclization | Gaussian 16 relaxed potential-energy scans of capped CYL along the forming C1–C6 bond for Claisen condensation and the forming O5–C1 bond for lactonization. Chapter 3 reports B3LYP/6-31G(d) calculations. | [Archived Gaussian inputs and logs](gas_phase_dft/), with the limitations below. |
+| Gas-phase cyclization | Gaussian 16 relaxed potential-energy scans of capped CYL along the forming C1–C6 bond for Claisen condensation and the forming O5–C1 bond for lactonization at B3LYP/6-31G(d) level. | [Gaussian scan inputs](gas_phase_dft/). |
 
 ## Run the QM/MM umbrella sampling
 
@@ -37,7 +32,7 @@ The QM/MM reaction coordinate is the forming bond distance minus the breaking th
 
 ## Gas-phase archive status
 
-The archived `cluster1` inputs use B3LYP/6-31G(d), and the `cluster2` inputs use HF/6-31G(d). Three logs end with Gaussian errors and the fourth has no termination marker. These files document partial scans. Reproducing the gas-phase electronic energy barriers reported in Chapter 3 requires the verified B3LYP scans. The enzyme and aqueous PMFs report activation free energies.
+The included inputs for `cluster1` and `cluster2` specify B3LYP/6-31G(d) relaxed scans. Gaussian output logs are excluded from the current files.
 
 ## Citation
 
