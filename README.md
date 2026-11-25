@@ -32,7 +32,7 @@ The QM/MM reaction coordinate is the forming bond distance minus the breaking th
 
 ## Gas-phase archive status
 
-The archived `cluster1` inputs use B3LYP/6-31G(d), and the `cluster2` inputs use HF/6-31G(d). Three logs end with Gaussian errors and the fourth has no termination marker. These files document partial scans. Reproducing the gas-phase electronic energy barriers reported in Chapter 3 requires the verified B3LYP scans. The enzyme and aqueous PMFs report activation free energies.
+The archived `cluster1`and `cluster2` inputs  were used for potential energy scan using B3LYP/6-31G(d). 
 
 ## Citation
 
